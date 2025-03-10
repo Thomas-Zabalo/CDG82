@@ -82,21 +82,78 @@
 
                                     <lienEchelle>
                                         <TCEforms>
-                                            <label>Lien vers la page échelle indiciaire (Voir comment faire)</label>
+                                            <label>Lien vers la page échelle indiciaire (Voir
+                                                comment faire)</label>
                                             <config>
                                                 <type>input</type>
                                                 <renderType>inputLink</renderType>
                                             </config>
                                         </TCEforms>
                                     </lienEchelle>
+
+
+                                    <titre.item1>
+                                        <TCEforms>
+                                            <label>Titre</label>
+                                            <config>
+                                                <type>input</type>
+                                                <size>30</size>
+                                            </config>
+                                        </TCEforms>
+                                    </titre.item1>
+                                    <conseil.item1>
+                                        <TCEforms>
+                                            <label>Titre</label>
+                                            <config>
+                                                <type>input</type>
+                                                <size>30</size>
+                                            </config>
+                                        </TCEforms>
+                                    </conseil.item1>
+
+
+                                    <titre.item2>
+                                        <TCEforms>
+                                            <label>Titre</label>
+                                            <config>
+                                                <type>input</type>
+                                                <size>30</size>
+                                            </config>
+                                        </TCEforms>
+                                    </titre.item2>
+                                    <conseil.item2>
+                                        <TCEforms>
+                                            <label>Titre</label>
+                                            <config>
+                                                <type>input</type>
+                                                <size>30</size>
+                                            </config>
+                                        </TCEforms>
+                                    </conseil.item2>
+
+                                    <titre.item3>
+                                        <TCEforms>
+                                            <label>Titre</label>
+                                            <config>
+                                                <type>input</type>
+                                                <size>30</size>
+                                            </config>
+                                        </TCEforms>
+                                    </titre.item3>
+                                    <conseil.item3>
+                                        <TCEforms>
+                                            <label>Titre</label>
+                                            <config>
+                                                <type>input</type>
+                                                <size>30</size>
+                                            </config>
+                                        </TCEforms>
+                                    </conseil.item3>
                                 </el>
                             </item>
                         </el>
                     </section>
-
-
                 </el>
-
             </ROOT>
         </sDEF>
     </sheets>
