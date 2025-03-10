@@ -1,0 +1,101 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<div class="container px-0">
+
+
+    <div class="d-flex flex-md-row align-items-center flex-column">
+
+        <div class="col p-0 mw-100 align-self-end">
+
+            <f:if condition="{Item.col3.promotionElement1} == 'Oui'">
+                <div class="m-2 arrow-size">
+                    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+                </div>
+            </f:if>
+
+            <f:link.typolink parameter="{Item.col3.lienElement1}">
+                <div class="box_carriere">
+                    <p class="m-0 p-3">{Item.col3.titreElement1}</p>
+                </div>
+            </f:link.typolink>
+
+        </div>
+
+
+        <f:if condition="{Item.col3.relation}">
+
+            <f:if condition="{Item.col3.relation} == 'Gauche'">
+                <div class="col-1 mb-2 py-4 arrow-size d-none d-md-block align-self-end">
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </div>
+            </f:if>
+
+            <f:if condition="{Item.col3.relation} == 'Droite'">
+                <div class="col-1 mb-2 py-4 arrow-size d-none d-md-block align-self-end">
+                    <i class="fas fa-arrow-left" aria-hidden="true"></i>
+                </div>
+            </f:if>
+
+            <f:if condition="{Item.col3.relation} == 'Non'">
+                <div class="col-1">
+                </div>
+            </f:if>
+
+        </f:if>
+
+        <div class="col p-0 mw-100 align-self-end">
+            <f:if condition="{Item.col3.promotionElement2} == 'Oui'">
+                <div class="m-2 arrow-size">
+                    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+                </div>
+            </f:if>
+
+
+            <f:link.typolink parameter="{Item.col3.lienElement2}">
+                <div class="box_carriere">
+                    <p class=" m-0 p-3">{Item.col3.titreElement2}</p>
+                </div>
+            </f:link.typolink>
+        </div>
+
+
+
+        <f:if condition="{Item.col3.relation2}">
+
+            <f:if condition="{Item.col3.relation2} == 'Gauche'">
+                <div class="col-1 mb-2 py-4 arrow-size d-none d-md-block align-self-end">
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </div>
+            </f:if>
+
+            <f:if condition="{Item.col3.relation2} == 'Droite'">
+                <div class="col-1 mb-2 py-4 arrow-size d-none d-md-block align-self-end">
+                    <i class="fas fa-arrow-left" aria-hidden="true"></i>
+                </div>
+            </f:if>
+
+            <f:if condition="{Item.col3.relation2} == 'Non'">
+                <div class="col-1">
+                </div>
+            </f:if>
+
+        </f:if>
+
+
+
+        <div class="col p-0 mw-100 align-self-end">
+            <f:if condition="{Item.col3.promotionElement3} == 'Oui'">
+                <div class="m-2 arrow-size">
+                    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+                </div>
+            </f:if>
+
+
+            <f:link.typolink parameter="{Item.col3.lienElement3}">
+                <div class="box_carriere">
+                    <p class=" m-0 p-3">{Item.col3.titreElement3}</p>
+                </div>
+            </f:link.typolink>
+        </div>
+    </div>
+</div>

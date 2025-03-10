@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>Cadre</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+
+                <el>
+                    <settings.titreItem>
+                        <TCEforms>
+                            <label>Catégorie</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items>
+                                    <numIndex index="0">
+                                        <numIndex index="0">A</numIndex>
+                                        <numIndex index="1">A</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1">
+                                        <numIndex index="0">B</numIndex>
+                                        <numIndex index="1">B</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2">
+                                        <numIndex index="0">C</numIndex>
+                                        <numIndex index="1">C</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </settings.titreItem>
+
+                    <settings.categoriePromo>
+                        <TCEforms>
+                            <label>Cette catégorie à une promotion ? Alignement</label>
+                            <config>
+                                <type>check</type>
+                                <renderType>selectSingle</renderType>
+                                <items>
+                                    <numIndex index="0">
+                                        <numIndex index="0">Non</numIndex>
+                                        <numIndex index="1">Non</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1">
+                                        <numIndex index="0">Gauche</numIndex>
+                                        <numIndex index="1">Gauche</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2">
+                                        <numIndex index="0">Centre</numIndex>
+                                        <numIndex index="1">Centre</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3">
+                                        <numIndex index="0">Droite</numIndex>
+                                        <numIndex index="1">Droite</numIndex>
+                                    </numIndex>
+                                </items>
+                                <default>Non</default>
+                            </config>
+                        </TCEforms>
+                    </settings.categoriePromo>
+
+
+                    <section>
+                        <type>array</type>
+                        <section>1</section>
+                        <title>Contenu</title>
+                        <el>
+
+                            <item>
+                                <type>array</type>
+                                <title>Cadre simple</title>
+                                <el>
+                                    <titre>
+                                        <TCEforms>
+                                            <label>Titre</label>
+                                            <config>
+                                                <type>input</type>
+                                                <size>30</size>
+                                            </config>
+                                        </TCEforms>
+                                    </titre>
+
+                                    <lien>
+                                        <TCEforms>
+                                            <label>Lien vers le cadre</label>
+                                            <config>
+                                                <type>input</type>
+                                                <renderType>inputLink</renderType>
+                                            </config>
+                                        </TCEforms>
+                                    </lien>
+
+
+
+                                   
+
+
+                                </el>
+                            </item>
+
+                            <col2>
+                                <type>array</type>
+                                <title>Deux cadres</title>
+                                <el>
+                                    <titreElement1>
+                                        <TCEforms>
+                                            <label>Titre</label>
+                                            <config>
+                                                <type>input</type>
+                                                <size>30</size>
+                                            </config>
+                                        </TCEforms>
+                                    </titreElement1>
+
+                                    <lienElement1>
+                                        <TCEforms>
+                                            <label>Lien vers le cadre</label>
+                                            <config>
+                                                <type>input</type>
+                                                <renderType>inputLink</renderType>
+                                            </config>
+                                        </TCEforms>
+                                    </lienElement1>
+
+                                    <promotionElement1>
+                                        <TCEforms>
+                                            <label>Le cadre a une promotion ?</label>
+                                            <config>
+                                                <type>select</type>
+                                                <renderType>selectSingle</renderType>
+                                                <items>
+                                                    <numIndex index="0">
+                                                        <numIndex index="0">Oui</numIndex>
+                                                        <numIndex index="1">Oui</numIndex>
+                                                    </numIndex>
+                                                    <numIndex index="1">
+                                                        <numIndex index="0">Non</numIndex>
+                                                        <numIndex index="1">Non</numIndex>
+                                                    </numIndex>
+                                                </items>
+                                                <default>Non</default>
+                                            </config>
+                                        </TCEforms>
+                                    </promotionElement1>
+
+
+                                    <relation>
+                                        <TCEforms>
+                                            <label>Promotion interne ? Si oui par quel
+                                                côté</label>
+                                            <config>
+                                                <type>check</type>
+                                                <renderType>selectSingle</renderType>
+                                                <items>
+                                                    <numIndex index="0">
+                                                        <numIndex index="0">Non</numIndex>
+                                                        <numIndex index="1">Non</numIndex>
+                                                    </numIndex>
+                                                    <numIndex index="1">
+                                                        <numIndex index="0">De gauche vers la droite
+                                                            →</numIndex>
+                                                        <numIndex index="1">Gauche</numIndex>
+                                                    </numIndex>
+                                                    <numIndex index="2">
+                                                        <numIndex index="0">De droite vers la gauche
+                                                            ←</numIndex>
+                                                        <numIndex index="1">Droite</numIndex>
+                                                    </numIndex>
+                                                </items>
+                                                <default>Non</default>
+                                            </config>
+                                        </TCEforms>
+                                    </relation>
+
+
+                                    <titreElement2>
+                                        <TCEforms>
+                                            <label>Titre</label>
+                                            <config>
+                                                <type>input</type>
+                                                <size>30</size>
+                                            </config>
+                                        </TCEforms>
+                                    </titreElement2>
+
+                                    <lienElement2>
+                                        <TCEforms>
+                                            <label>Lien vers le cadre</label>
+                                            <config>
+                                                <type>input</type>
+                                                <renderType>inputLink</renderType>
+                                            </config>
+                                        </TCEforms>
+                                    </lienElement2>
+
+                                    <promotionElement2>
+                                        <TCEforms>
+                                            <label>Le cadre a une promotion ?</label>
+                                            <config>
+                                                <type>select</type>
+                                                <renderType>selectSingle</renderType>
+                                                <items>
+                                                    <numIndex index="0">
+                                                        <numIndex index="0">Oui</numIndex>
+                                                        <numIndex index="1">Oui</numIndex>
+                                                    </numIndex>
+                                                    <numIndex index="1">
+                                                        <numIndex index="0">Non</numIndex>
+                                                        <numIndex index="1">Non</numIndex>
+                                                    </numIndex>
+                                                </items>
+                                                <default>Non</default>
+                                            </config>
+                                        </TCEforms>
+                                    </promotionElement2>
+                                </el>
+                            </col2>
+
+
+                            <col3>
+                                <type>array</type>
+                                <title>Trois cadres</title>
+                                <el>
+                                    <titreElement1>
+                                        <TCEforms>
+                                            <label>Titre</label>
+                                            <config>
+                                                <type>input</type>
+                                                <size>30</size>
+                                            </config>
+                                        </TCEforms>
+                                    </titreElement1>
+
+                                    <lienElement1>
+                                        <TCEforms>
+                                            <label>Lien vers le cadre</label>
+                                            <config>
+                                                <type>input</type>
+                                                <renderType>inputLink</renderType>
+                                            </config>
+                                        </TCEforms>
+                                    </lienElement1>
+
+                                    <promotionElement1>
+                                        <TCEforms>
+                                            <label>Le cadre a une promotion ?</label>
+                                            <config>
+                                                <type>select</type>
+                                                <renderType>selectSingle</renderType>
+                                                <items>
+                                                    <numIndex index="0">
+                                                        <numIndex index="0">Oui</numIndex>
+                                                        <numIndex index="1">Oui</numIndex>
+                                                    </numIndex>
+                                                    <numIndex index="1">
+                                                        <numIndex index="0">Non</numIndex>
+                                                        <numIndex index="1">Non</numIndex>
+                                                    </numIndex>
+                                                </items>
+                                                <default>Non</default>
+                                            </config>
+                                        </TCEforms>
+                                    </promotionElement1>
+
+
+                                    <relation>
+                                        <TCEforms>
+                                            <label>Promotion interne ? Si oui par quel
+                                                côté</label>
+                                            <config>
+                                                <type>check</type>
+                                                <renderType>selectSingle</renderType>
+                                                <items>
+                                                    <numIndex index="0">
+                                                        <numIndex index="0">Non</numIndex>
+                                                        <numIndex index="1">Non</numIndex>
+                                                    </numIndex>
+                                                    <numIndex index="1">
+                                                        <numIndex index="0">De gauche vers la droite</numIndex>
+                                                        <numIndex index="1">Gauche</numIndex>
+                                                    </numIndex>
+                                                    <numIndex index="2">
+                                                        <numIndex index="0">De droite vers la gauche</numIndex>
+                                                        <numIndex index="1">Droite</numIndex>
+                                                    </numIndex>
+                                                </items>
+                                                <default>Non</default>
+                                            </config>
+                                        </TCEforms>
+                                    </relation>
+
+
+                                    <titreElement2>
+                                        <TCEforms>
+                                            <label>Titre</label>
+                                            <config>
+                                                <type>input</type>
+                                                <size>30</size>
+                                            </config>
+                                        </TCEforms>
+                                    </titreElement2>
+
+                                    <lienElement2>
+                                        <TCEforms>
+                                            <label>Lien vers le cadre</label>
+                                            <config>
+                                                <type>input</type>
+                                                <renderType>inputLink</renderType>
+                                            </config>
+                                        </TCEforms>
+                                    </lienElement2>
+
+                                    <promotionElement2>
+                                        <TCEforms>
+                                            <label>Le cadre a une promotion ?</label>
+                                            <config>
+                                                <type>select</type>
+                                                <renderType>selectSingle</renderType>
+                                                <items>
+                                                    <numIndex index="0">
+                                                        <numIndex index="0">Oui</numIndex>
+                                                        <numIndex index="1">Oui</numIndex>
+                                                    </numIndex>
+                                                    <numIndex index="1">
+                                                        <numIndex index="0">Non</numIndex>
+                                                        <numIndex index="1">Non</numIndex>
+                                                    </numIndex>
+                                                </items>
+                                                <default>Non</default>
+                                            </config>
+                                        </TCEforms>
+                                    </promotionElement2>
+
+
+                                    <relation2>
+                                        <TCEforms>
+                                            <label>Promotion interne ? Si oui par quel
+                                                côté</label>
+                                            <config>
+                                                <type>check</type>
+                                                <renderType>selectSingle</renderType>
+                                                <items>
+                                                    <numIndex index="0">
+                                                        <numIndex index="0">Non</numIndex>
+                                                        <numIndex index="1">Non</numIndex>
+                                                    </numIndex>
+                                                    <numIndex index="1">
+                                                        <numIndex index="0">De gauche vers la droite</numIndex>
+                                                        <numIndex index="1">Gauche</numIndex>
+                                                    </numIndex>
+                                                    <numIndex index="2">
+                                                        <numIndex index="0">De droite vers la gauche</numIndex>
+                                                        <numIndex index="1">Droite</numIndex>
+                                                    </numIndex>
+                                                </items>
+                                                <default>Non</default>
+                                            </config>
+                                        </TCEforms>
+                                    </relation2>
+
+
+                                    <titreElement3>
+                                        <TCEforms>
+                                            <label>Titre</label>
+                                            <config>
+                                                <type>input</type>
+                                                <size>30</size>
+                                            </config>
+                                        </TCEforms>
+                                    </titreElement3>
+
+                                    <lienElement3>
+                                        <TCEforms>
+                                            <label>Lien vers le cadre</label>
+                                            <config>
+                                                <type>input</type>
+                                                <renderType>inputLink</renderType>
+                                            </config>
+                                        </TCEforms>
+                                    </lienElement3>
+
+                                    <promotionElement3>
+                                        <TCEforms>
+                                            <label>Le cadre a une promotion ?</label>
+                                            <config>
+                                                <type>select</type>
+                                                <renderType>selectSingle</renderType>
+                                                <items>
+                                                    <numIndex index="0">
+                                                        <numIndex index="0">Oui</numIndex>
+                                                        <numIndex index="1">Oui</numIndex>
+                                                    </numIndex>
+                                                    <numIndex index="1">
+                                                        <numIndex index="0">Non</numIndex>
+                                                        <numIndex index="1">Non</numIndex>
+                                                    </numIndex>
+                                                </items>
+                                                <default>Non</default>
+                                            </config>
+                                        </TCEforms>
+                                    </promotionElement3>
+                                </el>
+                            </col3>
+                        </el>
+                    </section>
+
+
+                </el>
+
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>

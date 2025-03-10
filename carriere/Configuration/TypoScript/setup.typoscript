@@ -1,0 +1,93 @@
+##############
+#### PAGE ####
+##############
+page {
+    includeCSS {
+       carrieretheme = EXT:carriere/Resources/Public/Scss/theme.scss
+    }
+
+    includeJSLibs {
+    }
+
+    includeJS {
+    }
+
+    includeJSFooterlibs {
+    }
+
+    includeJSFooter {
+    }
+}
+
+plugin.tx_carriere {
+    view {
+        templateRootPaths {
+            0 = EXT:carriere/Resources/Private/Templates/
+        }
+
+        partialRootPaths {
+            0 = EXT:carriere/Resources/Private/Partials/ContentElements
+        }
+
+        layoutRootPaths {
+            0 = EXT:carriere/Resources/Private/Layouts/
+        }
+    }
+}
+
+tt_content {
+    content_cadre =< lib.contentElement
+    content_cadre {
+        templateName = Cadre
+        templateRootPaths {
+            10 = EXT:carriere/Resources/Private/Templates/Cadre
+        }
+        partialRootPaths {
+        10 = EXT:carriere/Resources/Private/Partials/ContentElements
+        }
+         dataProcessing {
+            10 = BK2K\BootstrapPackage\DataProcessing\FlexFormProcessor
+            10 {
+                as = Cadre
+            }
+        }
+    }
+}
+
+tt_content {
+    content_test =< lib.contentElement
+    content_test {
+        templateName = Cadre
+        templateRootPaths {
+            10 = EXT:carriere/Resources/Private/Templates/Cadre
+        }
+        partialRootPaths {
+        10 = EXT:carriere/Resources/Private/Partials/ContentElements
+        }
+         dataProcessing {
+            10 = BK2K\BootstrapPackage\DataProcessing\FlexFormProcessor
+            10 {
+                as = Cadre
+            }
+        }
+    }
+}
+
+tt_content {
+    content_grade =< lib.contentElement
+    content_grade {
+        templateName = Grade
+        templateRootPaths {
+            10 = EXT:carriere/Resources/Private/Templates/Grade
+        }
+        partialRootPaths {
+        10 = EXT:carriere/Resources/Private/Partials/ContentElements
+        }
+         dataProcessing {
+            10 = BK2K\BootstrapPackage\DataProcessing\FlexFormProcessor
+            10 {
+                as = Grade
+            }
+        }
+    }
+}

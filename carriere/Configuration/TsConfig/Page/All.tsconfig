@@ -1,0 +1,34 @@
+# Create custom block :
+mod.wizards.newContentElement.wizardItems.custom {
+    header = CDG82
+
+    elements {
+        content_cadre {
+            iconIdentifier = content-panel
+            title = Content Card
+            description = Bloc
+            tt_content_defValues {
+                CType = content_cadre
+            }
+        }
+
+        content_test {
+            iconIdentifier = content-panel
+            title = Crash Test Cadre
+            description = Bloc de contenu
+            tt_content_defValues {
+                CType = content_test
+            }
+        }
+
+        content_grade {
+            iconIdentifier = content-panel
+            title = Content Grade
+            description = Bloc de contenu
+            tt_content_defValues {
+                CType = content_grade
+            }
+        }
+    }
+    show := addToList(content_cadre, content_test, content_grade)
+}

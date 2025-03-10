@@ -1,0 +1,56 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+
+<f:section name="Main">
+
+    <section class="container p-0" id="cadre">
+
+        <div class="px-4 my-2">
+            <div class="container">
+                <f:if condition="{Cadre.settings.categoriePromo}">
+                    <f:render partial="Cadre/Settings" arguments="{arrow: Cadre.settings.categoriePromo}" />
+                </f:if>
+            </div>
+        </div>
+
+
+
+        <div class="flex-column category">
+            <f:if condition="{Cadre.settings.titreItem}">
+                <p class="text-primary font-weight-bold mt-4 h5 py-2">Catégorie {Cadre.settings.titreItem}</p>
+            </f:if>
+
+            <section class="px-4 pb-4">
+
+                <f:for each="{Cadre.section}" as="Item">
+
+
+
+                    <!-- Item -->
+                    <f:if condition="{Item.item}">
+                        <f:render partial="Cadre/SimpleCard" arguments="{Item: Item}" />
+                    </f:if>
+
+
+                    <!-- 2 cols -->
+                    <f:if condition="{Item.col2}">
+                        <f:render partial="Cadre/2Cols" arguments="{Item: Item}" />
+                    </f:if>
+
+
+                    <!-- 3 cols -->
+                    <f:if condition="{Item.col3}">
+                        <f:render partial="Cadre/2Cols" arguments="{Item: Item}" />
+                    </f:if>
+
+                </f:for>
+
+            </section>
+
+        </div>
+    </section>
+
+</f:section>
+
+</html>
