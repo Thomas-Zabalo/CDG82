@@ -1,0 +1,17 @@
+####################################
+#### NEW CONTENT ELEMENT WIZARD ####
+####################################
+
+mod.wizards.newContentElement.wizardItems.carriere {
+    elements {
+        content_cadre {
+                iconIdentifier = content-panel
+                title = Bloc d’Informations – Cadre
+                description = Bloc contenant des informations spécifiques sur un cadre. Inclut une en-tête et un sous-titre.
+                tt_content_defValues {
+                    CType = content_cadre
+                }
+        }
+    }
+    show := addToList(content_cadre)
+}

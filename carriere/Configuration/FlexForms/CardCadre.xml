@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>Cadre</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+
+                <el>
+                    <promotion>
+                        <TCEforms>
+                            <label>Promotion du cadre</label>
+                            <config>
+                                <type>check</type>
+                                <items>
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0"></numIndex>
+                                        <numIndex index="1"></numIndex>
+                                    </numIndex>
+                                </items>
+                                <default>0</default>
+                            </config>
+                        </TCEforms>
+                    </promotion>
+                </el>
+
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>

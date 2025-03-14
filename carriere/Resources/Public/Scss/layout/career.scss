@@ -1,0 +1,41 @@
+#cadre {
+    .category-name {
+        font-size: 14px;
+    }
+
+    .subheader {
+        font-size: 12px;
+        font-weight: lighter;
+    }
+}
+
+
+
+#grade {
+
+    .bg-custom-3col {
+        background-color: rgb(245, 245, 250);
+    }
+
+    h4 {
+        font-size: 17px !important;
+    }
+
+    a {
+        text-decoration: none !important;
+    }
+
+    .content {
+        background-color: #d4e1f4;
+        border-radius: 4px;
+        border-bottom: 1px solid #eaeaea;
+        border-top: 1px solid #eaeaea;
+        border-left: 1px solid #eaeaea;
+        border-right: 1px solid #eaeaea;
+        padding: 1em;
+    }
+
+    .card_content strong {
+        text-decoration: underline;
+    }
+}

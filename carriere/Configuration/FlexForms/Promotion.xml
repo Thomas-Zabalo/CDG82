@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>Cadre</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+
+                <el>
+                    <promotion>
+                        <TCEforms>
+                            <label>Sens de la flêche</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items>
+                                    <numIndex index="0">
+                                        <numIndex index="0">Droite vers la gauche</numIndex>
+                                        <numIndex index="1">Droite</numIndex>
+                                        <numIndex index="2">EXT:carriere/Resources/Public/Icons/arrow-left-solid.svg</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1">
+                                        <numIndex index="0">Gauche vers la droite</numIndex>
+                                        <numIndex index="1">Gauche</numIndex>
+                                        <numIndex index="2">EXT:carriere/Resources/Public/Icons/arrow-right-solid.svg</numIndex>
+                                    </numIndex>
+                                </items>
+                                <default>0</default>
+                            </config>
+                        </TCEforms>
+                    </promotion>
+                </el>
+
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>

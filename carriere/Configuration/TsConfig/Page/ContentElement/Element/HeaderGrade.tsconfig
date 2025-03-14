@@ -1,0 +1,17 @@
+####################################
+#### NEW CONTENT ELEMENT WIZARD ####
+####################################
+
+mod.wizards.newContentElement.wizardItems.carriere  {
+    elements {
+       header_grade {
+                iconIdentifier = content-header
+                title = En-tête - Grade
+                description = Simple en-tête permettant d'afficher le titre d’un grade, avec deux liens renvoyant vers la fonction et l’échelle indiciaire.
+                tt_content_defValues {
+                    CType = header_grade
+                }
+            }
+    }
+    show := addToList(header_grade)
+}

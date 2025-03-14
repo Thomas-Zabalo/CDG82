@@ -1,0 +1,52 @@
+######################
+#### DEPENDENCIES ####
+######################
+
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:carriere/Configuration/TypoScript/ContentElement/setup.typoscript">
+
+
+##############
+#### PAGE ####
+##############
+page {
+    includeCSS {
+       carrieretheme = EXT:carriere/Resources/Public/Scss/theme.scss
+    }
+
+    includeJSLibs {
+    }
+
+    includeJS {
+    }
+
+    includeJSFooterlibs {
+    }
+
+    includeJSFooter {
+    }
+}
+
+
+plugin.tx_carriere {
+    view {
+        templateRootPaths {
+            0 = EXT:carriere/Resources/Private/Templates/
+        }
+
+        partialRootPaths {
+            0 = EXT:carriere/Resources/Private/Partials/ContentElements
+        }
+
+        layoutRootPaths {
+            0 = EXT:carriere/Resources/Private/Layouts/
+        }
+    }
+}
+
+
+
+
+
+
+
+

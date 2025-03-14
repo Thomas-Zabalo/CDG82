@@ -1,0 +1,27 @@
+############################################
+####   CTYPE: CARRIERE MULTIPLEARROW    ####
+############################################
+
+tt_content.promotion_cat >
+tt_content.promotion_cat =< lib.contentElement
+tt_content.promotion_cat {
+
+    ################
+    ### TEMPLATE ###
+    ################
+    templateName = PromotionCat
+    templateRootPaths {
+            10 = EXT:carriere/Resources/Private/Templates/Cadres/Components
+    }
+
+    ##########################
+    ### DATA PREPROCESSING ###
+    ##########################
+    dataProcessing {
+        10 = BK2K\BootstrapPackage\DataProcessing\FlexFormProcessor
+        10 {
+            as = PromotionCat
+        }
+    }
+
+}

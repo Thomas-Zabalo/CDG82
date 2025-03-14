@@ -1,0 +1,27 @@
+.button-grade {
+    color: #fff;
+    background-color: $secondary;
+    width: 100%;
+    padding: 0.375rem;
+    font-size: 1em;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out 0s;
+    border: 1px $secondary solid;
+
+    a {
+        display: block;
+        width: 100%;
+        color: #fff !important;
+    }
+}
+
+.button-grade:hover {
+    background-color: #fff !important;
+    border: 1px black solid;
+    width: 100%;
+    color: black !important;
+
+    a {
+        color: black !important;
+    }
+}

@@ -1,0 +1,6 @@
+##########################
+#### CONTENT ELEMENTS ####
+##########################
+
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:carriere/Configuration/TsConfig/Page/ContentElement/Categories.tsconfig">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:carriere/Configuration/TsConfig/Page/ContentElement/Element" extensions="tsconfig">

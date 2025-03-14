@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>Cadre</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+
+                <el>
+                    <promotion>
+                        <TCEforms>
+                            <label>Alignement</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectCheckBox</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">Gauche</numIndex>
+                                        <numIndex index="1">Gauche</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">Centre</numIndex>
+                                        <numIndex index="1">Centre</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">Droite</numIndex>
+                                        <numIndex index="1">Droite</numIndex>
+                                    </numIndex>
+                                </items>
+                                <cols>3</cols>
+                            </config>
+                        </TCEforms>
+                    </promotion>
+                </el>
+
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>

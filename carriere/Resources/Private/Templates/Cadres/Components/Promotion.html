@@ -1,0 +1,24 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<!-- Vérification si la variable 'Promotion' existe -->
+<f:if condition="{Promotion}">
+
+    <!-- Vérification si la valeur de 'Promotion.promotion' est 'Gauche' -->
+    <f:if condition="{Promotion.promotion} == 'Gauche'">
+        <!-- Affichage de l'icône fléchée droite pour la promotion à gauche -->
+        <div class="col-2 mb-2 py-4 arrow-size d-none d-md-block align-self-end">
+            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        </div>
+    </f:if>
+
+    <!-- Vérification si la valeur de 'Promotion.promotion' est 'Droite' -->
+    <f:if condition="{Promotion.promotion} == 'Droite'">
+        <!-- Affichage de l'icône fléchée gauche pour la promotion à droite -->
+        <div class="col-2 mb-2 py-4 arrow-size d-none d-md-block align-self-end">
+            <i class="fas fa-arrow-left" aria-hidden="true"></i>
+        </div>
+    </f:if>
+
+</f:if>
+
+</html>

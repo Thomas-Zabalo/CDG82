@@ -1,0 +1,18 @@
+####################################
+#### NEW CONTENT ELEMENT WIZARD ####
+####################################
+
+mod.wizards.newContentElement.wizardItems.carriere  {
+    elements {
+        content_grade {
+                iconIdentifier = content-panel
+                title = Bloc d’Informations – Grade
+                description = Bloc de contenu pour un item grade
+                tt_content_defValues {
+                    CType = content_grade
+                }
+        }
+    }
+    show := addToList(content_grade)
+}
+

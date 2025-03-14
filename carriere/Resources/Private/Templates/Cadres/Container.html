@@ -1,0 +1,44 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<!-- Section principale contenant les éléments, avec un ID spécifique 'cadre' -->
+<section class="container" id="cadre">
+
+    <!-- Vérification de la condition si 'children_200' existe -->
+    <f:if condition="{children_200}">
+        <!-- Boucle pour itérer à travers chaque élément dans 'children_200' -->
+        <f:for each="{children_200}" as="promotionCat">
+            <!-- Formatage du contenu en HTML brut -->
+            <f:format.raw>
+                <div class="content-card font-weight-bold text-white px-4 mx-4">
+                    {promotionCat.renderedContent}
+                </div>
+            </f:format.raw>
+        </f:for>
+    </f:if>
+
+    <!-- Vérification de la condition si 'children_201' existe -->
+    <f:if condition="{children_201}">
+        <!-- Section contenant des éléments avec un style centré et organisé en colonne -->
+        <div class="text-center d-flex flex-column category p-4 m-4">
+            <!-- Affichage du titre 'category.header' pour chaque élément dans 'children_201' -->
+            <h3 class="text-primary font-weight-bold m-2 category-name">
+                <f:for each="{children_201}" as="category">
+                    {category.header}
+                </f:for>
+            </h3>
+
+            <!-- Boucle pour afficher le contenu de 'children_202' -->
+            <f:for each="{children_202}" as="content">
+                <!-- Formatage du contenu en HTML brut -->
+                <f:format.raw>
+                    <div class="content-card font-weight-bold text-white">
+                        {content.renderedContent}
+                    </div>
+                </f:format.raw>
+            </f:for>
+        </div>
+    </f:if>
+
+</section>
+
+</html>

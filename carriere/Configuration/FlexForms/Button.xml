@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>Cadre</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+
+                <el>
+                    <lien>
+                        <TCEforms>
+                            <label>Lien vers la page</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputLink</renderType>
+                            </config>
+                        </TCEforms>
+                    </lien>
+
+                    <acces>
+                        <TCEforms>
+                            <label>Choix de l'accès au grade</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items>
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">Accès par Promotion interne</numIndex>
+                                        <numIndex index="1">Promotion interne</numIndex>
+                                        <numIndex index="2">EXT:carriere/Resources/Public/Icons/book-solid.svg</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">Accès par concours</numIndex>
+                                        <numIndex index="1">Accès par concours</numIndex>
+                                        <numIndex index="2">EXT:carriere/Resources/Public/Icons/briefcase-solid.svg</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </acces>
+                </el>
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>

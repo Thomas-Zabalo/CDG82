@@ -1,0 +1,7 @@
+####################
+#### CATEGORIES ####
+####################
+mod.wizards.newContentElement.wizardItems {
+    carriere.header = Fiche carrière
+    carriere.after = common
+}

@@ -1,0 +1,17 @@
+####################################
+#### NEW CONTENT ELEMENT WIZARD ####
+####################################
+
+mod.wizards.newContentElement.wizardItems.carriere  {
+    elements {
+        promotion {
+                iconIdentifier = content-special-div
+                title = Promotion interne
+                description = Indique une relation entre deux cadres, représentant une promotion interne, représentée par une flèche.
+                tt_content_defValues {
+                    CType = promotion
+                }
+        }
+    }
+    show := addToList(promotion)
+}

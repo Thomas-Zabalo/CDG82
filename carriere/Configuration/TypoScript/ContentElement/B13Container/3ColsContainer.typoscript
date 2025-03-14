@@ -1,0 +1,46 @@
+############################################
+####       CTYPE: 3 COLS CONTENT        ####
+############################################
+
+tt_content.content_3cols >
+tt_content.content_3cols =< lib.contentElement
+tt_content.content_3cols {
+
+    ################
+    ### TEMPLATE ###
+    ################
+    templateName = 3ColsContent
+    templateRootPaths {
+            10 = EXT:carriere/Resources/Private/Templates/Grid
+    }
+
+    ################
+    ### Partials ###
+    ################
+    partialRootPaths {
+        10 = EXT:carriere/Resources/Private/Partials/ContentElements
+    }
+
+    ##########################
+    ### DATA PREPROCESSING ###
+    ##########################
+    dataProcessing {
+        200 = B13\Container\DataProcessing\ContainerProcessor
+        200 {
+            colPos = 200
+            as = children_200
+        }
+        201 = B13\Container\DataProcessing\ContainerProcessor
+        201 {
+            colPos = 201
+            as = children_201
+        }
+        202 = B13\Container\DataProcessing\ContainerProcessor
+        202 {
+            colPos = 202
+            as = children_202
+        }
+    }
+}
+
+

@@ -1,0 +1,27 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+
+<div class="col px-2 mw-100 align-self-end">
+    <!-- Vérification si 'Cadre.promotion' est égal à '1' -->
+    <f:if condition="{Cadre.promotion} == '1'">
+        <!-- Affichage de l'icône de flèche vers le haut si la condition est remplie -->
+        <div class="m-2 arrow-size">
+            <i class="fas fa-arrow-up" aria-hidden="true"></i>
+        </div>
+    </f:if>
+
+    <!-- Fluid ViewHelper pour créer un lien dynamique avec l'URL spécifiée dans 'data.header_link' -->
+    <f:link.typolink parameter="{data.header_link}">
+        <!-- Div contenant le contenu principal du lien, ici un texte de titre -->
+        <div class="box_carriere">
+            <p class="m-0 p-1 texte">{data.header}</p>
+
+            <!-- Vérification si 'data.subheader' existe et affichage si présent -->
+            <f:if condition="{data.subheader}">
+                <p class="m-0 pb-2 subheader">{data.subheader}</p>
+            </f:if>
+        </div>
+    </f:link.typolink>
+</div>
+
+</html>

@@ -1,0 +1,49 @@
+############################################
+####           CTYPE: LAYOUT            ####
+############################################
+
+tt_content.layout_fiche >
+tt_content.layout_fiche =< lib.contentElement
+tt_content.layout_fiche {
+
+    ################
+    ### TEMPLATE ###
+    ################
+    templateName = Default
+    templateRootPaths {
+            10 = EXT:carriere/Resources/Private/Templates/Layouts/
+    }
+
+    ################
+    ### PARTIALS ###
+    ################
+    partialRootPaths {
+        10 = EXT:carriere/Resources/Private/Partials/ContentElements
+    }
+
+    ##########################
+    ### DATA PREPROCESSING ###
+    ##########################
+    dataProcessing {
+        200 = B13\Container\DataProcessing\ContainerProcessor
+        200 {
+            colPos = 200
+            as = children_200
+        }
+        201 = B13\Container\DataProcessing\ContainerProcessor
+        201 {
+            colPos = 201
+            as = children_201
+        }
+        202 = B13\Container\DataProcessing\ContainerProcessor
+        202 {
+            colPos = 202
+            as = children_202
+        }
+        203 = B13\Container\DataProcessing\ContainerProcessor
+        203 {
+            colPos = 203
+            as = children_203
+        }
+    }
+}

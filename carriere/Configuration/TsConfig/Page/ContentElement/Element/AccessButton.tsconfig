@@ -1,0 +1,17 @@
+####################################
+#### NEW CONTENT ELEMENT WIZARD ####
+####################################
+
+mod.wizards.newContentElement.wizardItems.carriere {
+    elements {
+        access_button {
+                iconIdentifier = content-panel
+                title = Bouton d'accès
+                description = Permet de renvoyer vers des informations complémentaires sur l'accès à un grade
+                tt_content_defValues {
+                    CType = access_button
+                }
+        }
+    }
+    show := addToList(access_button)
+}

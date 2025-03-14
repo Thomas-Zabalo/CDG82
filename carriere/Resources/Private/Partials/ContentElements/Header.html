@@ -1,0 +1,28 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<div class="header-cadre text-center">
+        
+    <!-- Affichage du titre principal 'item.header' -->
+    <h3 class="text-primary">{item.header}</h3>
+
+    <!-- Vérification si 'item.header_link' existe -->
+    <f:if condition="{item.header_link}">
+        <f:then>
+            <!-- Si 'item.header_link' existe, créer un lien avec la valeur 'header_link' -->
+            <div class="row">
+                <div class="col-md-12 col-xs-12 col-lg-12 decret">
+                    <a href="{header_link}" target="_blank" class="link-arrow">
+                        {item.subheader}
+                    </a>
+                </div>
+            </div>
+        </f:then>
+        <f:else>
+            <!-- Si 'item.header_link' n'existe pas, afficher 'item.subheader' comme texte -->
+            <h6>{item.subheader}</h6>
+        </f:else>
+    </f:if>
+
+</div>
+
+</html>

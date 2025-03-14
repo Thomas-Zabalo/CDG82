@@ -1,0 +1,36 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+
+
+<div class="container p-2 bg-primary rounded mt-5 mb-2">
+
+    <div class="d-flex flex-md-row flex-column align-items-center">
+
+        <!-- Colonne Fonction -->
+        <div class="col col-md-3 col-lg-2 p-0 order-2 order-md-1 m-1">
+            <f:link.typolink parameter="{Header.fonction}" target="_blank">
+                <div class="button-grade rounded">
+                    <p class="m-0 text-center">Fonction</p>
+                </div>
+            </f:link.typolink>
+        </div>
+
+        <!-- Colonne Titre -->
+        <div class="col order-1 order-md-2 m-2 m-md-0">
+            <h4 class="text-white p-0 m-0 text-center">
+                {data.header}
+            </h4>
+        </div>
+
+        <!-- Colonne Echelle -->
+        <div class="col col-md-3 col-lg-2 p-0 order-3 order-md-3 m-1">
+            <f:link.typolink parameter="{Header.echelle}" target="_blank">
+                    <div class="button-grade rounded">
+                        <p class="m-0 text-center">Echelle ind.</p>
+                    </div>
+            </f:link.typolink>
+        </div>
+    </div>
+</div>
+
+</html>

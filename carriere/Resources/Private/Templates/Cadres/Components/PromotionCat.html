@@ -1,0 +1,59 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:debug>{_all}</f:debug>
+
+<div class="d-flex">
+
+
+    <f:if condition="{PromotionCat.promotion} == 'Gauche'">
+        <div class="col d-flex justify-content-center my-0">
+            <div class="m-2 arrow-size-cat d-none d-md-flex">
+                <i class="fas fa-arrow-up" aria-hidden="true"></i>
+            </div>
+        </div>
+
+        <div class="col-2 d-flex justify-content-center my-0">
+            <div class="m-2 arrow-size-cat d-md-none d-flex">
+                <i class="fas fa-arrow-up" aria-hidden="true"></i>
+            </div>
+        </div>
+
+        <div class="col d-flex justify-content-center my-0"></div>
+    </f:if>
+
+
+    <f:if condition="{PromotionCat.promotion} == 'Centre'">
+
+        <div class="col d-flex justify-content-center my-0"></div>
+
+        <div class="col d-flex justify-content-center my-0">
+            <div class="m-2 arrow-size-cat d-flex">
+                <i class="fas fa-arrow-up" aria-hidden="true"></i>
+            </div>
+        </div>
+
+        <div class="col d-flex justify-content-center my-0"></div>
+
+    </f:if>
+
+
+    <f:if condition="{PromotionCat.promotion} == 'Droite'">
+
+        <div class="col d-flex justify-content-center my-0"></div>
+
+        <div class="col-2 d-flex justify-content-center my-0">
+            <div class="m-2 arrow-size-cat d-md-none d-flex">
+                <i class="fas fa-arrow-up" aria-hidden="true"></i>
+            </div>
+        </div>
+
+        <div class="col d-flex justify-content-center my-0">
+            <div class="m-2 arrow-size-cat d-none d-md-flex">
+                <i class="fas fa-arrow-up" aria-hidden="true"></i>
+            </div>
+        </div>
+    </f:if>
+
+</div>
+
+</html>

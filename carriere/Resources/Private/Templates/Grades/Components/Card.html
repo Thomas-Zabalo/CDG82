@@ -1,0 +1,52 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+  <!-- Conteneur principal -->
+  <div class="col p-0 text-center h-100">
+
+    <!-- Flèche visible uniquement sur les écrans larges -->
+    <div class="my-4 arrow-size d-none d-lg-block">
+      <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </div>
+
+    <div class="m-1 d-flex flex-column">
+
+      <!-- Section des conditions d'avancement -->
+      <div class="content">
+        <!-- Titre "Conditions d'avancement" -->
+        <p class="mb-3"><u>Conditions d'avancement :</u></p>
+        
+        <!-- Affichage du contenu dynamique de Grade.content -->
+        <div class="card_content">
+          <f:format.html>
+            {Grade.content}
+          </f:format.html>
+        </div>
+      </div>
+
+      <!-- Vérification si Grade.title et Grade.textarea existent -->
+      <f:if condition="{Grade.title} && {Grade.textarea}">
+        <div class="condition_content">
+          <!-- Titre conditionnel -->
+          <p class="m-2 text-center">
+            {Grade.title}
+          </p>
+
+          <!-- Affichage dynamique du contenu Grade.textarea -->
+          <div class="info_content">
+            <f:format.html>
+              {Grade.textarea}
+            </f:format.html>
+          </div>
+        </div>
+      </f:if>
+
+    </div>
+
+    <!-- Flèche visible uniquement sur les écrans larges -->
+    <div class="my-4 arrow-size d-none d-lg-block">
+      <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </div>
+
+  </div>
+
+</html>

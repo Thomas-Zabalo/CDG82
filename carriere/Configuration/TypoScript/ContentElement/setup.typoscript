@@ -1,0 +1,23 @@
+#############################################################
+####              CONTENT ELEMENT RENDERING              ####
+#############################################################
+
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:carriere/Configuration/TypoScript/ContentElement/Element/CardCadre.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:carriere/Configuration/TypoScript/ContentElement/Element/CardGrade.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:carriere/Configuration/TypoScript/ContentElement/Element/HeaderGrade.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:carriere/Configuration/TypoScript/ContentElement/Element/Promotion.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:carriere/Configuration/TypoScript/ContentElement/Element/PromotionCat.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:carriere/Configuration/TypoScript/ContentElement/Element/InfoBox.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:carriere/Configuration/TypoScript/ContentElement/Element/AccessButton.typoscript">
+
+
+
+#############################################################
+####             CONTAINER ELEMENT RENDERING             ####
+#############################################################
+
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:carriere/Configuration/TypoScript/ContentElement/B13Container/MainContainer.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:carriere/Configuration/TypoScript/ContentElement/B13Container/CadreContainer.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:carriere/Configuration/TypoScript/ContentElement/B13Container/GradeContainer.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:carriere/Configuration/TypoScript/ContentElement/B13Container/2ColsContainer.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:carriere/Configuration/TypoScript/ContentElement/B13Container/3ColsContainer.typoscript">

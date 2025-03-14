@@ -1,0 +1,29 @@
+############################################
+####      CTYPE: CARRIERE CARDGRADE     ####
+############################################
+
+tt_content.content_grade >
+tt_content.content_grade =< lib.contentElement
+tt_content.content_grade {
+
+    ################
+    ### TEMPLATE ###
+    ################
+    templateName = Card
+    templateRootPaths {
+            10 = EXT:carriere/Resources/Private/Templates/Grades/Components
+    }
+
+    ##########################
+    ### DATA PREPROCESSING ###
+    ##########################
+    dataProcessing {
+        10 = BK2K\BootstrapPackage\DataProcessing\FlexFormProcessor
+        10 {
+                as = Grade
+        }
+    }
+
+}
+
+

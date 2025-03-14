@@ -1,0 +1,89 @@
+#grade {
+
+    .condition {
+        color: $secondary;
+        border: 2px solid $secondary;
+        margin: 1rem 0;
+        font-size: 14px;
+        cursor: help;
+
+        .info {
+            position: absolute;
+            color: black;
+            background: #d4e1f4;
+            padding: 15px;
+            width: 24em;
+            transform: scale(0) rotate(-12deg);
+            box-shadow: 0 3px 3px #33607a;
+            transition: all 0.25s;
+            opacity: 0;
+            z-index: 100;
+            margin: 1.3rem 0;
+        }
+
+        .info::before {
+            content: "";
+            position: absolute;
+            left: center;
+            height: 0;
+            top: -6px;
+            width: 0;
+            border-bottom: 6px solid #d4e1f4;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+        }
+
+    }
+
+    .condition:hover {
+        background-color: #e2e2e2;
+        .info {
+            transform: scale(1) rotate(0);
+            opacity: 1;
+        }
+    }
+
+    .condition_content {
+        color: black;
+        border: 1px solid rgb(219, 219, 219);
+        margin: 1rem 0;
+        font-size: 14px;
+        cursor: help;
+
+        .info_content {
+            position: absolute;
+            color: black;
+            background: #d4e1f4;
+            box-shadow: 0 3px 3px #33607a;
+            padding: 15px;
+            width: 24em;
+            transform: scale(0) rotate(-12deg);
+            transition: all 0.25s;
+            opacity: 0;
+            z-index: 100;
+            margin: 1.3rem 0;
+            border-radius: 4px;
+        }
+
+        .info_content::before {
+            content: "";
+            position: absolute;
+            left: center;
+            height: 0;
+            top: -6px;
+            left: 5px;
+            width: 0;
+            border-bottom: 6px solid #d4e1f4;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+        }
+    }
+
+    .condition_content:hover {
+        background-color: rgb(226, 226, 226);
+        .info_content {
+            transform: scale(1) rotate(0);
+            opacity: 1;
+        }
+    }
+}

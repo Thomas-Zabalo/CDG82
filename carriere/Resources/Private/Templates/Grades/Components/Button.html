@@ -1,0 +1,31 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+ <!-- Conteneur -->
+<div class="button-grade rounded text-center my-2 m-md-2">
+
+    <!-- Fluid ViewHelper pour générer un lien avec l'URL dynamique, le paramètre 'button.lien' est utilisé ici -->
+    <f:link.typolink parameter="{button.lien}" target="_blank">
+        <!-- Conteneur pour l'icône et le texte avec alignement centré -->
+        <div class="d-block align-items-center justify-content-center">
+            
+            <!-- Switch Fluid pour déterminer l'icône à afficher en fonction de la valeur de 'button.acces' -->
+            <f:switch expression="{button.acces}">
+                
+                <!-- Si 'button.acces' est égal à "Promotion interne", afficher l'icône de livre -->
+                <f:case value="Promotion interne">
+                    <i class="fas fa-book px-3"></i>
+                </f:case>
+                
+                <!-- Si 'button.acces' est égal à "Accès par concours", afficher l'icône de mallette -->
+                <f:case value="Accès par concours">
+                    <i class="fas fa-briefcase px-3"></i>
+                </f:case>
+            </f:switch>
+
+            <!-- Affichage du texte associé à 'button.acces' -->
+            {button.acces}
+        </div>
+    </f:link.typolink>
+</div>
+
+</html>

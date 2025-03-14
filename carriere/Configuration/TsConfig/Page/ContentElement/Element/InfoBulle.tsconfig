@@ -1,0 +1,17 @@
+####################################
+#### NEW CONTENT ELEMENT WIZARD ####
+####################################
+
+mod.wizards.newContentElement.wizardItems.carriere  {
+    elements {
+        info_bulle {
+                iconIdentifier = content-quote
+                title = Aide promotionnelle
+                description = Affiche, au survol, des informations contextuelles sur l'obtention et l'avancement vers un nouveau grade.
+                tt_content_defValues {
+                    CType = info_bulle
+                }
+        }
+    }
+    show := addToList(info_bulle)
+}

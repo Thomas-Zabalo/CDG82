@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>Grade</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+
+
+                    <fonction>
+                        <TCEforms>
+                            <label>Lien vers la page fonction</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputLink</renderType>
+                            </config>
+                        </TCEforms>
+                    </fonction>
+
+
+                    <echelle>
+                        <TCEforms>
+                            <label>Lien vers l'échelle indiciaire</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputLink</renderType>
+                            </config>
+                        </TCEforms>
+                    </echelle>
+
+                </el>
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>

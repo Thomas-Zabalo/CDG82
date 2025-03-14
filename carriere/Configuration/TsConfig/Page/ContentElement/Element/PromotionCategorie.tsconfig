@@ -1,0 +1,17 @@
+####################################
+#### NEW CONTENT ELEMENT WIZARD ####
+####################################
+
+mod.wizards.newContentElement.wizardItems.carriere  {
+    elements {
+        promotion_cat {
+            iconIdentifier = content-special-div
+            title = Flèche de promotion
+            description = Représente une évolution d'une catégorie B vers une catégorie A, marquant une montée en responsabilité ou en grade, représentée par une flèche.
+            tt_content_defValues {
+                CType = promotion_cat
+            }
+        }
+    }
+    show := addToList(promotion_cat)
+}

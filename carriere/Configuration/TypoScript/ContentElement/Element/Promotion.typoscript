@@ -1,0 +1,27 @@
+############################################
+####       CTYPE: CARRIERE ARROW        ####
+############################################
+
+tt_content.promotion >
+tt_content.promotion =< lib.contentElement
+tt_content.promotion {
+
+    ################
+    ### TEMPLATE ###
+    ################
+    templateName = Promotion
+    templateRootPaths {
+            10 = EXT:carriere/Resources/Private/Templates/Cadres/Components
+    }
+
+    ##########################
+    ### DATA PREPROCESSING ###
+    ##########################
+    dataProcessing {
+        10 = BK2K\BootstrapPackage\DataProcessing\FlexFormProcessor
+        10 {
+            as = Promotion
+        }
+    }
+
+}
